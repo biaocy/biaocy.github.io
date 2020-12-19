@@ -153,6 +153,94 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/12/19/Hexo配置markdown脚注/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="biaocy">
+      <meta itemprop="description" content="HTDC">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HTDC">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/19/Hexo配置markdown脚注/" class="post-title-link" itemprop="url">Hexo配置markdown脚注</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-19 18:09:26 / 修改时间：18:11:10" itemprop="dateCreated datePublished" datetime="2020-12-19T18:09:26+08:00">2020-12-19</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="缘起">缘起</h2>
+<p>写文发现一种更好的markdown引用，脚注。</p>
+<h2 id="配置">配置</h2>
+<p>Hexo默认的markdown渲染插件并不支持脚注，需要替换成<code>markdown-it</code><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>插件。<br>
+官方已有集成，按照官方教程<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>配置:</p>
+<ol>
+<li>在hexo主目录卸载原markdown渲染插件:</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm un hexo-renderer-marked --save</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>安装新插件:</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i hexo-renderer-markdown-it --save</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>修改hexo配置文件<code>_config.yml</code>，启用<code>markdown-it-footnote</code>插件，在文件尾部加上以下内容：</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">...</span></span><br><span class="line"><span class="comment"># markdown</span></span><br><span class="line"><span class="attr">markdown:</span></span><br><span class="line">  <span class="attr">preset:</span> <span class="string">'default'</span></span><br><span class="line">  <span class="attr">plugins:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">markdown-it-footnote</span></span><br></pre></td></tr></table></figure>
+<h2 id="使用">使用</h2>
+<p>请参考<code>markdown-it-footnote</code><sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>说明</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a href="https://github.com/markdown-it/markdown-it" target="_blank" rel="noopener">https://github.com/markdown-it/markdown-it</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><a href="https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Getting-Started" target="_blank" rel="noopener">https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Getting-Started</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p><a href="https://github.com/markdown-it/markdown-it-footnote" target="_blank" rel="noopener">https://github.com/markdown-it/markdown-it-footnote</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/12/19/Rime-U模式输入法配置/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -290,7 +378,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>今年才有意降低QQ的使用率，无意发现<a href="https://telegram.org/" target="_blank" rel="noopener">Telegram</a>。感觉挺好，开源项目，各种客户端支持。<br>邀请室友使用一阵子，发现大多人挺难离开QQ了；都成圈子了，离不开圈子，就离不开聊天软件了。</p>
+          <p>今年才有意降低QQ的使用率，无意发现<a href="https://telegram.org/" target="_blank" rel="noopener">Telegram</a>。感觉挺好，开源项目，各种客户端支持。<br>
+邀请室友使用一阵子，发现大多人挺难离开QQ了；都成圈子了，离不开圈子，就离不开聊天软件了。</p>
 
       
     </div>
@@ -355,19 +444,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="Nodejs-安装"><a href="#Nodejs-安装" class="headerlink" title="Nodejs 安装"></a>Nodejs 安装</h2><ol>
-<li><p>非Windows系统</p>
-<p>推荐安装Nodejs版本管理工具 <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">nvm</a></p>
-</li>
-<li><p>Windows系统</p>
-<p>推荐安装Nodejs版本管理工具<a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="noopener">nvm-windows</a></p>
-</li>
+          <h2 id="Nodejs-安装">Nodejs 安装</h2>
+<ol>
+<li>非Windows系统</li>
 </ol>
-<h2 id="其他优化"><a href="#其他优化" class="headerlink" title="其他优化"></a>其他优化</h2><ol>
-<li><p>替换npm镜像为淘宝npm镜像</p>
-<p>众所周知，国内网络使用npm简直是<strong>蛋疼</strong>。<br>建议替换npm镜像为<a href="http://npm.taobao.org/" target="_blank" rel="noopener">淘宝npm镜像</a></p>
-</li>
+<pre><code>推荐安装Nodejs版本管理工具 [nvm](https://github.com/creationix/nvm)
+</code></pre>
+<ol start="2">
+<li>Windows系统</li>
 </ol>
+<pre><code>推荐安装Nodejs版本管理工具[nvm-windows](https://github.com/coreybutler/nvm-windows)
+</code></pre>
+<h2 id="其他优化">其他优化</h2>
+<ol>
+<li>替换npm镜像为淘宝npm镜像</li>
+</ol>
+<pre><code>众所周知，国内网络使用npm简直是**蛋疼**。
+建议替换npm镜像为[淘宝npm镜像](http://npm.taobao.org/)</code></pre>
 
       
     </div>
@@ -449,14 +542,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

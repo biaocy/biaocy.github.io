@@ -20,19 +20,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="HTDC">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="缘起 写文发现一种更好的markdown引用，脚注。 配置 Hexo默认的markdown渲染插件并不支持脚注，需要替换成markdown-it[1]插件。 官方已有集成，按照官方教程[2]配置:  在hexo主目录卸载原markdown渲染插件:  1$ npm un hexo-renderer-marked --save  安装新插件:  1$ npm i hexo-renderer-mark">
+<meta name="keywords" content="工具,hexo,markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo配置markdown脚注">
+<meta property="og:url" content="http://yoursite.com/2020/12/19/Hexo配置markdown脚注/index.html">
 <meta property="og:site_name" content="HTDC">
-<meta property="og:description" content="HTDC">
+<meta property="og:description" content="缘起 写文发现一种更好的markdown引用，脚注。 配置 Hexo默认的markdown渲染插件并不支持脚注，需要替换成markdown-it[1]插件。 官方已有集成，按照官方教程[2]配置:  在hexo主目录卸载原markdown渲染插件:  1$ npm un hexo-renderer-marked --save  安装新插件:  1$ npm i hexo-renderer-mark">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2015-11-01T13:27:47.000Z">
+<meta property="og:updated_time" content="2020-12-19T10:11:10.445Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="HTDC">
+<meta name="twitter:title" content="Hexo配置markdown脚注">
+<meta name="twitter:description" content="缘起 写文发现一种更好的markdown引用，脚注。 配置 Hexo默认的markdown渲染插件并不支持脚注，需要替换成markdown-it[1]插件。 官方已有集成，按照官方教程[2]配置:  在hexo主目录卸载原markdown渲染插件:  1$ npm un hexo-renderer-marked --save  安装新插件:  1$ npm i hexo-renderer-mark">
 
-<link rel="canonical" href="http://yoursite.com/tags/">
+<link rel="canonical" href="http://yoursite.com/2020/12/19/Hexo配置markdown脚注/">
 
 
 <script id="page-configurations">
@@ -40,13 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>tags | HTDC
-</title>
+  <title>Hexo配置markdown脚注 | HTDC</title>
   
 
 
@@ -148,51 +148,114 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-CN">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/12/19/Hexo配置markdown脚注/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="biaocy">
+      <meta itemprop="description" content="HTDC">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HTDC">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo配置markdown脚注
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">tags
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-<div class="post-meta">
+              <time title="创建时间：2020-12-19 18:09:26 / 修改时间：18:11:10" itemprop="dateCreated datePublished" datetime="2020-12-19T18:09:26+08:00">2020-12-19</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="缘起">缘起</h2>
+<p>写文发现一种更好的markdown引用，脚注。</p>
+<h2 id="配置">配置</h2>
+<p>Hexo默认的markdown渲染插件并不支持脚注，需要替换成<code>markdown-it</code><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>插件。<br>
+官方已有集成，按照官方教程<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>配置:</p>
+<ol>
+<li>在hexo主目录卸载原markdown渲染插件:</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm un hexo-renderer-marked --save</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>安装新插件:</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i hexo-renderer-markdown-it --save</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>修改hexo配置文件<code>_config.yml</code>，启用<code>markdown-it-footnote</code>插件，在文件尾部加上以下内容：</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">...</span></span><br><span class="line"><span class="comment"># markdown</span></span><br><span class="line"><span class="attr">markdown:</span></span><br><span class="line">  <span class="attr">preset:</span> <span class="string">'default'</span></span><br><span class="line">  <span class="attr">plugins:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">markdown-it-footnote</span></span><br></pre></td></tr></table></figure>
+<h2 id="使用">使用</h2>
+<p>请参考<code>markdown-it-footnote</code><sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>说明</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a href="https://github.com/markdown-it/markdown-it" target="_blank" rel="noopener">https://github.com/markdown-it/markdown-it</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p><a href="https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Getting-Started" target="_blank" rel="noopener">https://github.com/hexojs/hexo-renderer-markdown-it/wiki/Getting-Started</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p><a href="https://github.com/markdown-it/markdown-it-footnote" target="_blank" rel="noopener">https://github.com/markdown-it/markdown-it-footnote</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/工具/" rel="tag"># 工具</a>
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/markdown/" rel="tag"># markdown</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/12/19/Rime-U模式输入法配置/" rel="prev" title="Rime U模式输入法配置">
+      <i class="fa fa-chevron-left"></i> Rime U模式输入法配置
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-              目前共计 6 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/hexo/" style="font-size: 12px; color: #ccc">hexo</a> <a href="/tags/markdown/" style="font-size: 12px; color: #ccc">markdown</a> <a href="/tags/工具/" style="font-size: 30px; color: #111">工具</a> <a href="/tags/环境搭建/" style="font-size: 12px; color: #ccc">环境搭建</a> <a href="/tags/碎碎念/" style="font-size: 12px; color: #ccc">碎碎念</a> <a href="/tags/输入法/" style="font-size: 12px; color: #ccc">输入法</a>
-            </div>
-          </div>
-        
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
 
 
           </div>
@@ -243,6 +306,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#缘起"><span class="nav-number">1.</span> <span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置"><span class="nav-number">2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">3.</span> <span class="nav-text">使用</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
